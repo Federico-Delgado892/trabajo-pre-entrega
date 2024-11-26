@@ -1,0 +1,298 @@
+p {
+    text-align: center;
+   
+    
+}
+
+
+h1 {
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 5%;
+}
+
+body {
+    background-color: beige;
+    text-align: center;
+    font-family: "Roboto", serif;
+}
+
+h2 {
+    text-align: center;
+    color: rosybrown;
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top:  5%;
+}
+
+.enlaces-relativos{
+    
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 10px;
+    font-size: 20px;
+   display: flex;
+   margin: 0%;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+
+
+.enlaces:hover{
+
+    color: palevioletred;
+   font-size: 25px;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: black;
+   font-size: 20px;
+    list-style: none;
+}
+
+
+
+
+
+/* PAGINA HTML*/
+
+
+
+
+
+.contenedor {
+    display: flex;
+    padding: 40px 50px;
+   background-image: url(https://b1870670.smushcdn.com/1870670/wp-content/uploads/2021/02/pedicura-2.png?lossy=1&strip=1&webp=1);
+   mask-repeat: no-repeat;
+   background-size: cover;
+ 
+}
+ 
+
+
+.parrafo-principal{ padding: 1%;
+    margin: 50px;
+    display: flex;
+    text-align: left;
+    font-size: 20px;
+     }
+
+
+
+.contenedor-2 {
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+   background-color: white;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+
+}
+
+
+
+.parrafo-principal2 {
+    display: inline-block;
+    padding: 3%;
+    margin: 30px;
+    text-align: center;
+    background-color: #f6f6f6 !important;
+    font-size: 20px;
+    
+}
+
+
+.parrafo-2{ margin-bottom: 10%;}
+
+
+
+/* PAGINA PRODUCTOS*/
+
+
+/*PRODUCTOS*/
+/* en lugar de repetir tomo cada clase y la separo por comas */
+.productos-principal, .productos2, .productos3{
+    display: flex;
+    width: 90vw;
+    justify-content: space-around;
+    margin: 35px auto;
+    flex-wrap: wrap;
+
+}
+
+.productos{
+    border: 1px solid black;
+    width: 300px;
+    display: flex;
+   flex-direction: column;
+    align-items: stretch; /* por las dudas para que se estire  */
+
+}
+/* aca coloco el tamaño de mis imagenes */
+.productos img{
+    width: 300px;
+    height: 300px;
+}
+
+.productos-content {
+    background-color: blueviolet;
+    color: aliceblue;
+    /* margin: 100px; hace demasiado pequeño*/
+    padding: 7%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;/* ocupa todo el espacio disponible */
+}
+
+.parrrafo-productos{
+    flex-grow: 1;/* ocupa todo el espacio disponible */
+}
+
+
+/*PAGINA PATOLOGIAS*/
+
+.patologia1, .patologias3{ display: flex; padding: 40px; background-color: #f1f1f1; margin-top: 100px;}
+
+.contenedor-patologia1, .contenedor-patologias3{ width: 50%; font-size: 18px; margin-right: 3%; }
+
+.imagen-1{ max-width: 100%;}
+
+.patologias2, .patologias4{ display: flex; padding: 40px; flex-direction: row-reverse; margin-top: 100px; text-align: center;}
+
+.contenedor-patologias2, .contenedor-patologias4{ width: 50%;  flex-direction: row-reverse; font-size: 20px; margin-left: 3%;}
+
+
+
+
+
+/* PAGINA SOBRE MI*/
+
+.trabajos-general{ 
+    padding: 3%;
+    display: flex;
+   
+}
+
+
+
+.sobre-mi {
+    display: flex;
+    padding: 8%;
+    text-align: left;
+    margin: 0%;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-image: url(https://img.freepik.com/fotos-premium/pedicura-profesional-cliente-procedimiento-pedicura-medica-clinica-podologia-podologia-cuidado-salud_289836-561.jpg);
+    mask-repeat: no-repeat;
+   background-size: cover;
+    
+}
+
+.parrafo-sobre-mi{ padding: 1%;
+    margin: 50px;
+    display: flex;
+    text-align: left;
+    font-size: 30px;
+    }
+/*PAGINA CONTACTOS*/
+
+.contacto-formulario{ display: flex; flex-direction: column;text-align: left; font-size: 20px;}
+
+
+.contactos-nombre{ display: flex; }
+
+.contacto-margen{ padding: 15px; width: 70%; }
+
+/*PIE DE PAGINA*/
+
+ul{ text-align: left; list-style: none; padding: 0%; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+
+.iframe-contacto{ padding-top: 5%; padding-bottom: 10%;}
+
+.subtitulo-iframe{ text-align: center;}
+
+
+
+
+
+
+
+/*MEDIA QUERY PARA SMARTHPHONES*/
+
+
+@media (max-width: 767px) {
+
+
+ .imagen-logo{width: auto;}
+
+
+ h1 { font-size: 15px;}
+
+ h2{ font-size: 20px;}
+
+ h3{text-align: center;}
+
+ img{ width: 300px; height: 300px;}
+
+ iframe{ width: 300px; height: 350px;}
+
+a { font-size: 10px;}
+
+p{ text-align: center;}
+
+
+
+ /* PAGINA HTML*/
+
+ .parrafo-principal2{ display: block;}
+
+ .enlaces-relativos{ flex-direction: row;
+    justify-content: space-between;}
+
+
+.parrafo-principal{font-size: 15px; margin: 15px; text-align: center;}
+
+.contenedor { display: block;}
+
+
+/*PAGINA PATOLOGIAS*/
+
+.patologias2, .patologias3, .patologias4{ display: block;}
+
+.patologia1{ display: block; padding: 0%;  }
+
+.contenedor-patologia1, .contenedor-patologias2, .contenedor-patologias3, .contenedor-patologias4{  font-size: 15px; text-align: right;width: 100%; }
+
+
+
+
+/*SOBRE MI*/
+
+.sobre-mi{ display: block; padding: 0%; text-align: center; }
+
+.parrafo-sobre-mi{ font-size: 16px;}
+
+.trabajos-general{ display: block; padding: 0%;}
+
+.imagen-1, .imagen-2, .imagen-3{ margin: 15%;}
+
+
+
+/*PAGINA PRODUCTOS*/
+
+.productos{ margin: 10%;}
+
+
+ }
+
